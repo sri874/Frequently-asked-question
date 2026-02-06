@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium FAQ Accordion</title>
+    <meta name="description" content="Explore frequently asked questions with our sleek, interactive accordion component.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-radial"></div>
+    
+    <main class="container">
+        <header class="faq-header">
+            <h1 class="fade-in">Frequently Asked <span class="gradient-text">Questions</span></h1>
+            <p class="subtitle fade-in">Everything you need to know about our platform and services.</p>
+        </header>
+
+        <section class="accordion">
+            <div class="accordion-item" id="faq-1">
+                <button class="accordion-header" aria-expanded="false" aria-controls="faq-content-1">
+                    <span>What is this accordion component?</span>
+                    <span class="icon"></span>
+                </button>
+                <div class="accordion-content" id="faq-content-1" role="region" aria-labelledby="faq-1">
+                    <div class="content-inner">
+                        <p>This is a premium, interactive FAQ accordion built with modern web technologies. It features smooth transitions, glassmorphism aesthetics, and a responsive design that looks great on any device.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item" id="faq-2">
+                <button class="accordion-header" aria-expanded="false" aria-controls="faq-content-2">
+                    <span>How does the interactivity work?</span>
+                    <span class="icon"></span>
+                </button>
+                <div class="accordion-content" id="faq-content-2" role="region" aria-labelledby="faq-2">
+                    <div class="content-inner">
+                        <p>The component uses Vanilla JavaScript to toggle states. When you click a header, it calculates the height of the content area and expands it smoothly using CSS transitions. It also automatically collapses other open items for a focused experience.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item" id="faq-3">
+                <button class="accordion-header" aria-expanded="false" aria-controls="faq-content-3">
+                    <span>Is it accessible?</span>
+                    <span class="icon"></span>
+                </button>
+                <div class="accordion-content" id="faq-content-3" role="region" aria-labelledby="faq-3">
+                    <div class="content-inner">
+                        <p>Yes! We follow WAI-ARIA best practices. Each item uses proper <code>aria-expanded</code> and <code>aria-controls</code> attributes, making it readable by screen readers and navigable via keyboard.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item" id="faq-4">
+                <button class="accordion-header" aria-expanded="false" aria-controls="faq-content-4">
+                    <span>Can I customize the design?</span>
+                    <span class="icon"></span>
+                </button>
+                <div class="accordion-content" id="faq-content-4" role="region" aria-labelledby="faq-4">
+                    <div class="content-inner">
+                        <p>Absolutely. All styles are handled via modern CSS with CSS variables. You can easily change the color scheme, spacing, and animations to match your brand's identity.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item" id="faq-5">
+                <button class="accordion-header" aria-expanded="false" aria-controls="faq-content-5">
+                    <span>How do I implement this?</span>
+                    <span class="icon"></span>
+                </button>
+                <div class="accordion-content" id="faq-content-5" role="region" aria-labelledby="faq-5">
+                    <div class="content-inner">
+                        <p>Simply include the HTML structure, link the external CSS and JS files, and you're good to go. No heavy frameworks or dependencies required.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="faq-footer fade-in">
+            <p>Still have questions? <a href="#" class="footer-link">Contact our support team</a></p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
